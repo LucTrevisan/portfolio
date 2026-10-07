@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>XR LAB | WebXR, Digital Twins &amp; Immersive Experiences</title>
+    <meta
+      name="description"
+      content="Experiências interativas desenvolvidas com Babylon.js, WebXR, IoT e tecnologias abertas para educação e indústria."
+    />
+    <meta name="theme-color" content="#05090d" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://luctrevisan.github.io/xr-lab/" />
+
+    <!-- Open Graph / redes sociais -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="XR LAB" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="XR LAB | WebXR, Digital Twins &amp; Immersive Experiences" />
+    <meta
+      property="og:description"
+      content="Experiências interativas desenvolvidas com Babylon.js, WebXR, IoT e tecnologias abertas para educação e indústria."
+    />
+    <meta property="og:url" content="https://luctrevisan.github.io/xr-lab/" />
+    <meta property="og:image" content="https://luctrevisan.github.io/xr-lab/assets/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="XR LAB — Experiências Imersivas" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Ícones e PWA -->
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- Fonte: uma família variável, carregada sem bloquear a renderização
+         (até chegar, o texto usa a fonte do sistema) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..800&amp;display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..800&amp;display=swap" />
+    </noscript>
+
+    <!-- Imagem do Hero (LCP) solicitada antes do JavaScript -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="assets/hero/atlas.webp"
+      imagesrcset="assets/hero/atlas-720.webp 720w, assets/hero/atlas.webp 1280w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <link rel="stylesheet" href="src/styles/tokens.css" />
+    <link rel="stylesheet" href="src/styles/base.css" />
+    <link rel="stylesheet" href="src/styles/layout.css" />
+    <link rel="stylesheet" href="src/styles/components.css" />
+
+    <!-- Módulos baixados em paralelo (evita a cascata de imports) -->
+    <link rel="modulepreload" href="src/App.js" />
+    <link rel="modulepreload" href="src/data/projects.js" />
+    <link rel="modulepreload" href="src/lib/catalog.js" />
+    <link rel="modulepreload" href="src/lib/dom.js" />
+    <link rel="modulepreload" href="src/lib/icons.js" />
+    <link rel="modulepreload" href="src/components/Header.js" />
+    <link rel="modulepreload" href="src/components/Search.js" />
+    <link rel="modulepreload" href="src/components/Hero.js" />
+    <link rel="modulepreload" href="src/components/Catalog.js" />
+    <link rel="modulepreload" href="src/components/Filters.js" />
+    <link rel="modulepreload" href="src/components/ProjectRow.js" />
+    <link rel="modulepreload" href="src/components/ProjectCard.js" />
+    <link rel="modulepreload" href="src/components/Technologies.js" />
+    <link rel="modulepreload" href="src/components/ProjectModal.js" />
+    <link rel="modulepreload" href="src/components/Footer.js" />
+    <script type="module" src="src/main.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "XR LAB",
+        "alternateName": "XR LAB — Experiências Imersivas",
+        "url": "https://luctrevisan.github.io/xr-lab/",
+        "inLanguage": "pt-BR",
+        "description": "Experiências interativas desenvolvidas com Babylon.js, WebXR, IoT e tecnologias abertas para educação e indústria."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#experiencias">Pular para as experiências</a>
+
+    <div id="app">
+      <!-- Estado inicial (antes do JavaScript): reserva o espaço do Hero -->
+      <div class="boot" aria-hidden="true"></div>
+    </div>
+
+    <noscript>
+      <p class="noscript">
+        O catálogo XR LAB precisa de JavaScript para listar as experiências. Ative o JavaScript e
+        recarregue a página.
+      </p>
+    </noscript>
+  </body>
+</html>

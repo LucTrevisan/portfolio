@@ -1,0 +1,98 @@
+/* =========================================================
+   XR LAB — Design tokens
+   Tecnologia industrial premium: superfícies escuras, cyan
+   como identidade, bordas de 1px e movimento discreto.
+   ========================================================= */
+:root {
+  color-scheme: dark;
+
+  /* Cor */
+  --c-bg: #05090d;
+  --c-surface: #0b1118;
+  --c-surface-2: #111a23;
+  --c-surface-3: #16212c;
+  --c-text: #f4f7fa;
+  --c-text-2: #9ba8b4;
+  --c-accent: #00b8f0;
+  --c-accent-hover: #2cc6f4;
+  --c-blue: #087ea4;
+  --c-ok: #32d583;
+  --c-warn: #f5a623;
+  --c-on-accent: #031018;
+
+  --c-border: rgb(155 168 180 / 0.14);
+  --c-border-strong: rgb(155 168 180 / 0.26);
+  --c-accent-soft: rgb(0 184 240 / 0.12);
+  --c-accent-line: rgb(0 184 240 / 0.55);
+  --c-scrim: rgb(2 5 8 / 0.72);
+
+  /* Tipografia */
+  --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'SF Mono', Consolas, 'Liberation Mono', monospace;
+
+  --fs-xs: 0.75rem;   /* 12 */
+  --fs-sm: 0.875rem;  /* 14 */
+  --fs-md: 1rem;      /* 16 */
+  --fs-lg: 1.125rem;  /* 18 */
+  --fs-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-2xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --fs-hero: clamp(2rem, 1.2rem + 3.6vw, 4.25rem);
+
+  --lh-tight: 1.08;
+  --lh-snug: 1.3;
+  --lh-body: 1.6;
+  --tracking-label: 0.16em;
+
+  /* Espaço (base 4px) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+
+  /* Layout */
+  --maxw: 1600px;
+  --gutter: clamp(16px, 4vw, 56px);
+  --header-h: 56px;
+  --tap: 44px;
+
+  /* Forma */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-pill: 999px;
+
+  /* Profundidade */
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-2: 0 10px 30px -10px rgb(0 0 0 / 0.7), 0 2px 6px rgb(0 0 0 / 0.35);
+  --shadow-3: 0 30px 80px -20px rgb(0 0 0 / 0.85);
+
+  /* Movimento */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 150ms;
+  --t-base: 200ms;
+  --t-slow: 250ms;
+
+  --z-header: 50;
+  --z-modal: 100;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 68px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-base: 0ms;
+    --t-slow: 0ms;
+  }
+}
